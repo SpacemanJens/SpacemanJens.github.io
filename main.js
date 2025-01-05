@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   background("#ffcccc");
-  fill('red');
+  fill('yellow');
 
    // Check if arrow keys are being held and update position
   if (keyIsDown(LEFT_ARROW)) {
