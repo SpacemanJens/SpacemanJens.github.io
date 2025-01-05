@@ -33,7 +33,7 @@ function keyPressed() {
 
 function draw() {
   background("#ffcccc");
-  fill("#000066");
+  fill('red');
 
   ellipse(shared.x, shared.y, 200, 300);
 }
