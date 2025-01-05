@@ -35,5 +35,18 @@ function draw() {
   background("#ffcccc");
   fill('red');
 
+	  // Check if arrow keys are being held and update position
+  if (keyIsDown(LEFT_ARROW)) {
+    x -= speed; // Move left
+  }
+  if (keyIsDown(RIGHT_ARROW)) {
+    x += speed; // Move right
+  }
+  if (keyIsDown(UP_ARROW)) {
+    y -= speed; // Move up
+  }
+  if (keyIsDown(DOWN_ARROW)) {
+    y += speed; // Move down
+  }
   ellipse(shared.x, shared.y, 200, 300);
 }
