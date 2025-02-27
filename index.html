@@ -2,6 +2,11 @@
 <html>
   <body>
     <main></main>
+    <script>
+    if (window.location.search.indexOf('nocache') === -1) {
+       window.location.href = window.location.pathname + "?nocache=" + new Date().getTime();
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5.party@latest/dist/p5.party.js"></script><br>
     Example of using matematics to simulate a star system with and without use of object oriented programming:<br>
